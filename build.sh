@@ -19,7 +19,7 @@ if [ ! -d "$SCRIPTPATH/src/ros2cs" ]; then
 fi
 
 # OPTIONS=""
-STANDALONE=0
+STANDALONE=1
 TESTS=0
 CLEAN_INSTALL=0
 
