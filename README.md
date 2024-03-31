@@ -1,6 +1,9 @@
 Ros2 For Unity
 ===============
 
+**This is a repository of [ros2-for-unity](https://github.com/RobotecAI/ros2-for-unity) with changes for Android.
+You can download the unitypackage from Release.**
+
 ROS2 For Unity is a high-performance communication solution to connect Unity3D and ROS2 ecosystem in a ROS2 "native" way. Communication is not bridged as in several other solutions, but instead it uses ROS2 middleware stack (rcl layer and below), which means you can have ROS2 nodes in your simulation.
 Advantages of this module include:
 - High performance - higher throughput and considerably lower latencies comparing to bridging solutions.
