@@ -1,6 +1,6 @@
 # ROS2 For Unity - Android
 
-This readme contains information specific to Ubuntu 20.04/22.04. For general information, please see [README.md](README.md)
+This readme contains information specific to 22.04. For general information, please see [README.md](README.md)
 
 ## Building
 
@@ -40,9 +40,17 @@ Start with installation of dependencies. Make sure to complete each step of `ros
 * Unity Asset is ready to import into your Unity project. You can find it in `install/asset/` directory.
 * (optionally) To create `.unitypackage` in `install/unity_package`
     ```bash
-    create_unity_package.sh -u <your-path-to-unity-editor-executable>
+    ./create_unity_package.sh -u <your-path-to-unity-editor-executable>
     ```
+    * e.g. `./create_unity_package.sh -p /home/<user>/Unity/Hub/Editor/202x.x.xx/Editor/Unity`
     > *NOTE* Unity license is required. 
+
+## Unity Build Settings
+Change the following in `Player Settings...`
+
+* Change `Scripting Backend` to `IL2CPP`
+* Check `ARM64` under `Target Architectures`
+* Change `Internet Access` to `Require`
 
 ## OS-Specific usage remarks
 
